@@ -69,10 +69,10 @@ int main() {
     mask <<= (lines - 1);
     for(int v = 0; v < 2; v++){
         if(v == 0){
-            qa += 1;
+            qa = qa + 1;
         }
         else{
-            qa -= 1;
+            qa = qa - 1;
         }
         for(int po = 0; po < lines; po++){
             putchar(mas[qa] & mask ? '1':'0');
